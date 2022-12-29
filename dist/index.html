@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image" href="/img/coffelogo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Landing</title>
+    <script type="module" crossorigin src="/assets/index-8f986e03.js"></script>
+    <link rel="stylesheet" href="/assets/index-7b60efca.css">
+  </head>
+  <body
+    class="min-h-screen mx-auto text-neutral-900 dark:text-neutral-200 bg-white dark:bg-neutral-800"
+  >
+    <header>
+      <nav class="mx-auto p-4 bg-yellow-700">
+        <div class="container mx-auto flex items-center justify-between">
+          <a href="/" class="lg:ml-10 lg:left-1/2 lg:-translate-x-1/2 z-50"
+            ><img
+              src="/img/coffelogo.jpg"
+              width="125"
+              class="w-48 md:w-64 lg:72 transition-opacity hover:opacity-80"
+          /></a>
+          <h2 class="text-md font-mono p-2 text-center">
+            The best coffee you can find
+          </h2>
+
+          <button
+            id="menu"
+            class="lg:hidden text-white hover:opacity-50 transition-opacity"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 9h16.5m-16.5 6.75h16.5"
+              />
+            </svg>
+          </button>
+          <div
+            role="menubar"
+            aria-expanded="false"
+            class="hidden flex-col gap-5 relative right-0 left-0 bg-yellow-700 text-center text-lg p-6 lg:flex lg:flex-row lg:static lg:w-full lg:justify-evenly z-50"
+          >
+            <a
+              role="menuitem"
+              href="/"
+              class="py-1 px-6 dark:text-white text-neutral-900 hover:opacity-70"
+              >Home</a
+            >
+            <a
+              role="menuitem"
+              href="/"
+              class="py-1 px-6 dark:text-white text-neutral-900 hover:opacity-70"
+              >Products</a
+            >
+            <a
+              role="menuitem"
+              href="#contact"
+              class="py-1 px-6 dark:text-white text-neutral-900 bg-yellow-500 rounded-md hover:shadow-xl transition-shadow"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      class="relative h-auto w-auto flex flex-col items-end justify-center"
+    >
+      <div class="border-2">
+        <img src="/img/coffee_shop.jpg" alt="coffee shop" />
+      </div>
+      <div
+        class="bg-gray-800 rounded-lg h-40 w-40 right-4 opacity-75 text-center absolute flex flex-col justify-around items-center md:h-80 md:w-80 lg:right-40 lg:h-1/3 lg:w-1/3 lg:opacity-80"
+      >
+        <p class="font-bold">Check out our new locations!</p>
+        <p>Alaska - 298 Grant Bypass</p>
+        <p>New Mexico - 53796 Dickinson Lodge</p>
+      </div>
+    </section>
+
+    <section class="relative border-5 h-10 m-10">
+      <div class="mb-2 text-center border-5">
+        <p class="m-2">What are you waiting for?</p>
+        <a
+          class="font-semibold p-1 dark:text-white text-neutral-900 bg-yellow-500 rounded-lg text-2xl"
+          href="/"
+        >
+          ORDER NOW</a
+        >
+      </div>
+    </section>
+
+    <section class="relative">
+      <div class="w-auto m-5 flex items-end justify-center">
+        <img
+          class="opacity-70 z-1 w-full lg:w-3/4"
+          src="/img/coffee.jpg"
+          alt="coffee"
+        />
+        <h1
+          class="text-center text-xl text-ellipsis md:text-3xl lg:text-5xl text-yellow-600 font-bold absolute"
+        >
+          Fragrance, flavour <br />Stimulating qualities of the finest coffee.
+        </h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="">
+        <div id="default-carousel" class="relative" data-carousel="static">
+          <!-- Carousel wrapper -->
+          <div
+            class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+          >
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <span
+                class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800"
+                >First Slide</span
+              >
+              <img
+                src="/img/coffee_shop_stand.jpg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="/img/coffee_shop.jpg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="/img/coffee.jpg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Slider indicators -->
+          <div
+            class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                ></path>
+              </svg>
+              <span class="hidden">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+              <span class="hidden">Next</span>
+            </span>
+          </button>
+        </div>
+
+        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+      </div>
+    </section>
+
+    <footer class="flex flex-col items-center justify-center" id="contact">
+      <h2 class="text-xl text-center">Contact Info</h2>
+      <p class="text-center">Phone: 1234-5678-9101</p>
+      <p class="text-center">Mail: coffee@mail.com</p>
+      <ul class="flex flex-row justify-between opacity-70">
+        <a href="/" class="m-2 p-2 hover:bg-white"
+          ><img src="/img/twitter.svg"
+        /></a>
+        <a href="/" class="m-2 p-2 hover:bg-white"
+          ><img src="/img/youtube.svg"
+        /></a>
+        <a href="/" class="m-2 p-2 hover:bg-white"
+          ><img src="/img/instagram.svg"
+        /></a>
+      </ul>
+      <ul class="flex flex-row items-center justify-center">
+        <a href="/" class="border-2 border-white m-2 p-3">Privacy</a>
+        <a href="/" class="border-2 border-white m-2 p-3">Terms of use</a>
+        <a href="/" class="border-2 border-white m-2 p-3">Cookie preference</a>
+      </ul>
+      <p class="text-xs">2022 Coffee Company. All rights reserved</p>
+      <p class="text-xs">Dev: Enzo Bogado</p>
+    </footer>
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
